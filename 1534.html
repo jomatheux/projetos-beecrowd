@@ -1,0 +1,36 @@
+<script>
+    //var prompt = function(){return lines.shift();};
+    var opr = 0;
+    while(opr == 0){
+
+        var N = (prompt(""));
+        if(N == ''){
+        break
+        }
+            N = parseInt(N)
+            var M = new Array(N);
+            for(let i = 0; i<M.length; i++){
+                M[i] = new Array(N);
+                for(let j = 0; j<M[i].length; j++){
+                    M[i][j] = 3;
+                }
+            }
+            for(let i = 0; i<M.length; i++){
+                for(let j = 0; j<M[i].length; j++){
+                    if(j == i){
+                        M[i][j] = 1;
+                    }
+                    if(j == M.length-1-i){
+                        M[i][j] = 2
+                    }
+                }
+            }
+            for(let i = 0; i<M.length; i++){
+                var imp = ''
+                for (let j = 0; j < M[i].length; j++) {
+                    imp+=M[i][j] + '';
+                }
+                console.log(imp);
+            }
+        }
+</script>

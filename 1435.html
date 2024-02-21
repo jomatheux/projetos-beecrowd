@@ -1,0 +1,49 @@
+<script>
+    //var prompt = function(){return lines.shift();};
+    var op = 0;
+    while(op == 0){
+        var X = parseInt(prompt(""));
+        if(X==0){
+            break
+        }
+        var aux = 1
+        var M = new Array(X)
+        for(let i = 0; i<M.length; i++){
+            M[i] = new Array(X);
+        }
+
+        for (let a = 0; a < Math.ceil(X/2); a++) {
+            for (let i = a; i < M.length - a; i++) {
+                for (let j = a; j < M[i].length - a; j++) {
+                    M[i][j] = aux;
+                }
+            }
+            aux++;
+        } 
+var stg = ''
+        for(let i = 0; i<M.length; i++){
+            for(let j = 0; j<M[i].length; j++){
+                if(j<M.length-1){
+                    if(M[i][j]<=9){
+                       stg+= ' ' + ' ' + M[i][j]+ ' '
+                    }else if(M[i][j]<=99){
+                        stg+= ' ' + M[i][j]+ ' '
+                    }else if(M[i][j]>99){
+                        stg+= M[i][j]+ ' '
+                    }
+                }else if(j == M.length-1){
+                    if(M[i][j]<=9){
+                        stg+= ' ' + ' ' + M[i][j]+ '\n'
+                    }else if(M[i][j]<=99){
+                        stg+= ' ' + M[i][j]+ '\n'
+                    }else if(M[i][j]>99){
+                        stg+= M[i][j]+ '\n'
+                    }
+                }
+            }
+        }
+        console.log(stg)
+    }
+    
+
+</script>

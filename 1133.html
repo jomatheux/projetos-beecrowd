@@ -1,0 +1,19 @@
+<script>
+    //var prompt = function(texto) { return lines.shift();};
+    var x = parseInt(prompt("Digite o valor de X:"));
+    var y = parseInt(prompt("Digite o valor de Y:"));
+    var c;
+    if(x>y){
+        for(c=y+1;c<x;c++){
+        if(c%5==2||c%5==3){
+            console.log(c);
+        }
+        }
+    }else if(y>x){
+        for(c=x+1;c<y;c++){
+            if(c%5==2||c%5==3){
+                console.log(c);
+            }
+        }
+    }
+</script>

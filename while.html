@@ -1,0 +1,24 @@
+<script>
+    /* function potencia(base,expoente){
+        var pot = 1;
+        for(let i = 0;i<expoente;i++){
+            pot = pot * base;
+        }
+        return pot;
+    }
+    var[A,B] = prompt("digite a base e o expoente separados por espaço: ").split(" ").map(Number);
+    console.log(potencia(A,B)); */
+
+    function fatorial(N){
+        var fat = 1;
+        while(N>1){
+            fat = fat * N;
+            N--;
+        }
+        return fat;
+    }
+    document.write(fatorial(5));
+
+
+    
+</script>

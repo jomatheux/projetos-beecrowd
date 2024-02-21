@@ -1,0 +1,36 @@
+<script>
+    //var prompt = function(t){return lines.shift();};
+    function spc(s,f,g,h){
+var l = "";
+var k = String(s[f-1][f-1]).length;
+var e = String(s[g][h]).length;
+for(let i=0;i<k-e;i++ ){
+    l+=" ";
+}
+if(h!=f-1)
+{return l+=s[g][h]+" ";}
+else
+{return l+=s[g][h]+"\n";}
+}
+     var w = 0;
+    while(w==0)
+    { var x = parseInt(prompt(""));
+    if(x==0){
+        break
+    }else{
+        var v = new Array(x);
+        var st = "";
+        for (let i = 0; i < x; i++) {
+            v[i] = new Array(x);
+            for (let j = 0; j < x; j++) {
+            let s = 2**(i+j)
+            v[i][j]=s;
+            } 
+            }
+            for (let i = 0; i < x; i++) {
+            for (let j = 0; j < x; j++) {
+            st+= spc(v,x,i,j);
+    }
+}}
+        console.log(st); }
+</script>

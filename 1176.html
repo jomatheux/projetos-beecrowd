@@ -1,0 +1,20 @@
+<script>
+    //var prompt = function(t){return lines.shift();};
+    var t1 = 0, t2 = 1,soma = 0, fib = "",pos;
+    var n = parseInt(prompt("Digite a quantidade de termos"));
+    var v = new Array(n);
+    for(let i = 0;i<64;i++){
+        v[i] = t1;
+        fib = fib+t1+" ";
+        soma = t1+t2;
+        t1 = t2;
+        t2 = soma;
+    }
+    for(let i =0; i<n; i++){
+        var t = parseInt(prompt("Digite o valor do termo"));
+        pos = v[t];
+        console.log("Fib"+"("+t+")"+" = "+pos);
+    }
+    console.log(fib);
+    
+</script>

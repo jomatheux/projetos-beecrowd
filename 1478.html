@@ -1,0 +1,39 @@
+<script>
+    //var prompt = function(t){return lines.shift();};
+    var S = 0;
+    while(S==0)
+    { var y = parseInt(prompt(""));
+    if(y==0){
+        break
+    }else{
+        var b = new Array(y);
+        var p = "";
+        for (let i = 0; i < y; i++) {
+            b[i] = new Array(y);
+            for (let j = 0; j < y; j++) {
+                if (j - i < 0) {
+                    b[i][j] = ((j - i) * (-1)) + 1;
+
+                } else {
+                    b[i][j] = (j - i) + 1;
+                }
+                if(j<y-1){
+            if(b[i][j]<10){
+             p += " "+" "+(b[i][j]+"")+" ";}
+             else if(b[i][j]<100){
+                p += " "+(b[i][j]+"")+" ";
+             }else if(b[i][j]==100){
+                p +=(b[i][j]+"")+" ";
+             }
+        }else{
+             if(b[i][j]<10){
+                p+=" "+" "+(b[i][j]+"")+"\n";}
+            else if(b[i][j]<100){
+                    p+=" "+(b[i][j]+"")+"\n";}
+            else if(b[i][j]==100){
+                    p+=(b[i][j]+"")+"\n";}
+            }
+        }}
+   console.log(p);}
+        }
+</script>

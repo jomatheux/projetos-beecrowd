@@ -1,0 +1,29 @@
+<script>
+    //var prompt = function(texto){return lines.shift();};
+    var conta = prompt("S soma ou M media MAIUSCULO");
+    var soma = 0;
+    var M = new Array(12);
+    for(i = 0; i<M.length; i++){
+        M[i] = new Array(12);
+        for(j = 0; j<M[i].length; j++){
+            M[i][j] = Number(prompt());
+        }
+
+    }
+    if(conta == "S"){
+        for(i = 1; i<=11; i++){
+            for(j = 11; j>11-i; j--){
+                soma += M[i][j];
+            }
+        }
+        console.log(soma.toFixed(1));
+    }else if(conta == "M"){
+        for(i = 1; i<=11; i++){
+            for(j = 11; j>11-i; j--){
+                soma += M[i][j];
+            }
+        }
+        var media = (soma/66);
+        console.log(media.toFixed(1));
+    }
+</script>

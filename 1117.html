@@ -1,0 +1,17 @@
+<script>
+    //var prompt = function(texto) { return lines.shift();};
+    var primeiranota;
+    var notaValidada=0,totalNotasValidadas=0, media=0;
+    while(totalNotasValidadas!=2){
+        primeiranota = Number(prompt("Digite a nota do aluno: "));
+        if(primeiranota>=0 && primeiranota <=10){
+            notaValidada += primeiranota;
+            totalNotasValidadas += 1;
+        }else{
+            console.log("nota invalida");
+        }        
+    }
+    media = notaValidada/2;
+    console.log("media = "+media.toFixed(2));
+    
+</script>

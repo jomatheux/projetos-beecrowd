@@ -1,0 +1,28 @@
+<script>
+    var a = Number(prompt(""));
+    var n = Number(prompt(""));
+    var s = a;
+    var aux = 3;
+    var fat = 1;
+
+   
+
+    for(let i = 0;i<n;i++){
+        if(i%2==0){
+         for(let j = 1;j<=aux;j++){
+             fat = fat*j;
+         }
+         s-=(Math.pow(s, aux)/fat);
+        }else if(i%2!=0){
+         for(let j = 1;j<=aux;j++){
+             fat = fat*j;
+         }
+         s+=(Math.pow(s, aux)/fat);
+        }
+        aux+=2;
+        fat = 1;       
+     }   
+
+
+    console.log(s.toFixed(10));
+</script>

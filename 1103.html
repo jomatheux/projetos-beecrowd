@@ -1,0 +1,13 @@
+<script>
+    //var prompt = function(texto) { return lines.shift();};
+    var [H1,M1,H2,M2]= prompt("").split(" ").map(Number);
+    mti= H1*60 + M1;
+    mtf= H2*60 + M2;
+    dtm= 0;
+    if(mtf>mti){
+        dtm = mtf-mti;
+    }else if(mtf<mti){
+        dtm = (24*60) - mti + mtf;
+    }
+    console.log(dtm);
+</script>

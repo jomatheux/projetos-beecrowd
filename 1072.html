@@ -1,0 +1,16 @@
+<script>
+    //var prompt = function(texto) { return lines.shift();};
+    var N = parseInt(prompt("Digite o volar de N:"));
+    var In = 0;
+    var out = 0;
+    for(i=0;i<N;i++){
+        var X = Number(prompt("Digite o valor de X:"));
+        if(X>=10 && X<=20){
+            In++;
+        }else{
+            out++;
+        }
+    }
+    console.log(In+" in");
+    console.log(out+" out");
+</script>

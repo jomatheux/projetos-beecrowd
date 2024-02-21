@@ -1,0 +1,31 @@
+<script>
+    //var prompt = function(texto) { return lines.shift();};
+    var GRENAIS = 0;
+    var vi = 0;
+    var vg = 0;
+    var emp = 0;
+    do{var [gi,gg]= prompt("Digite o valor do placar:").split(" ").map(Number);
+    if(gi>gg){
+        vi++;
+    }else if(gi<gg){
+        vg++;
+    }else if(gi==gg){
+        emp++;
+    }else{}
+    console.log("Novo grenal (1-sim 2-nao)");
+    GRENAIS++;
+    var ngr = parseInt(prompt(""));
+    }while(ngr==1);
+    console.log(GRENAIS+" grenais");
+    console.log("Inter:"+vi);
+    console.log("Gremio:"+vg);
+    console.log("Empates:"+emp);
+    if(vi>vg){
+        console.log("Inter venceu mais");
+    }else if(vi<vg){
+        console.log("Gremio venceu mais");
+    }else if(vi==vg){
+        console.log("Nao houve vencedor");
+    }
+
+</script>

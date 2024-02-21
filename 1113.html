@@ -1,0 +1,14 @@
+<meta charset="UTF= 8">
+
+<script>    
+    //var prompt = function(texto) { return lines.shift();};
+    var [X,Y]= prompt("Digite dois numeros separados por espaço: ").split(" ").map(Number);
+    while(X!=Y){        
+        if(X>Y){
+            console.log("Decrescente");            
+        }else{
+            console.log("Crescente");
+        }
+        [X,Y]= prompt("Digite dois numeros separados por espaço: ").split(" ").map(Number);
+    }
+</script>

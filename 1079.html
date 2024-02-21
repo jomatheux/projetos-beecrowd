@@ -1,0 +1,10 @@
+<script>
+    //var prompt = function(texto) { return lines.shift();};
+    var N = parseInt(prompt("Digite o valor de N: "));
+    for(let i=0;i<N;i++){
+        var [A,B,C]= prompt("Digite os numeros separados por espaço: ").split(" ").map(Number);
+        var mediapon = (A*2+B*3+C*5)/10;
+        console.log(mediapon.toFixed(1));
+    }
+
+</script>

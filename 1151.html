@@ -1,0 +1,19 @@
+<script>
+    //var prompt = function(texto) { return lines.shift();};
+    var N = Number(prompt("digite um numero entre 0 e 46:"));
+    var a1=0;
+    var a2=1;
+    var soma;
+    var fib = "";
+    for(i=0;i<N;i++){
+        if(i!=N-1){
+            fib = (fib + a1 +" ");
+        soma=a1+a2;
+        a1=a2;
+        a2=soma;
+        }else{
+            fib = fib + a1;
+        }
+    }
+    console.log(fib);
+</script>

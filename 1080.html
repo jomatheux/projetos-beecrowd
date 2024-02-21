@@ -1,0 +1,15 @@
+<script>
+    //var prompt = function(texto) { return lines.shift();};
+    var maior = -1;
+    var pos = 1;
+    for(i=0;i<100;i++){
+        var N = Number(prompt(""));
+        if(N>maior){
+            maior = N;
+            pos = i;
+        }
+    }
+    pos = pos + 1;
+    console.log(maior);
+    console.log(pos);
+</script>

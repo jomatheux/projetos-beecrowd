@@ -1,0 +1,21 @@
+<script>
+    //var prompt = function(texto) { return lines.shift();};
+    var N = parseInt(prompt("Digite a quantidade de valores que serão lidos: "));
+    for(i=0;i<N;i++){
+        var numeros = Number(prompt("Digite o numero "+(i+1)+" :"));
+        if(numeros%2==0 && numeros>0){
+            console.log("EVEN POSITIVE");
+        }else if(numeros%2!=0 && numeros>0){
+            console.log("ODD POSITIVE");
+        }else if(numeros<0 && numeros%2==0){
+            console.log("EVEN NEGATIVE");
+        }else if(numeros<0 && numeros%2!=0){
+            console.log("ODD NEGATIVE");
+        }else if(numeros==0){
+            console.log("NULL");
+        }
+        
+    }
+
+
+</script>

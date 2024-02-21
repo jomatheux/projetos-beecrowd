@@ -1,0 +1,14 @@
+<script>
+    //var prompt = function(texto) { return lines.shift();};    
+    var vp=0;
+    var media=0;
+    for(i=0;i<6;i++){
+        var x = Number(prompt(""));
+        if(x>0){
+            media=media+x;
+            vp++;
+        }
+    }         
+    console.log(vp+" valores positivos");
+    console.log((media/vp).toFixed(1));
+</script>

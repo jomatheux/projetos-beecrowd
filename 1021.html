@@ -1,0 +1,45 @@
+<script>
+    //var prompt = function(texto) { return lines.shift();};
+    var N = parseFloat(prompt("Digite um valor: ")).toFixed(2);
+
+var N100 = parseInt(N/100);
+N = N%100;
+var N50 = parseInt(N/50);
+N = N%50;
+var N20 = parseInt(N/20);
+N = N%20;
+var N10 = parseInt(N/10);
+N = N%10;
+var N5 = parseInt(N/5);
+N = N%5;
+var N2 = parseInt(N/2);
+N = N%2;
+var M1 = parseInt(N/1.0);
+N = N%1;
+var M50 = parseInt(N/0.50);
+N = N%0.50;
+var M25 = parseInt(N/0.25);
+N = N%0.25;
+var M10 = parseInt(N/0.10);
+N = N%0.10;
+var M5 = parseInt(N/0.05);
+N = N%0.05;
+var M1C = parseInt(N/0.01).toFixed(0);
+N = N%0.01;
+
+console.log("NOTAS:");
+console.log(N100+" nota(s) de R$ 100.00");
+console.log(N50+" nota(s) de R$ 50.00");
+console.log(N20+" nota(s) de R$ 20.00");
+console.log(N10+" nota(s) de R$ 10.00");
+console.log(N5+" nota(s) de R$ 5.00");
+console.log(N2+" nota(s) de R$ 2.00");
+console.log("MOEDAS:");
+console.log(M1+" moeda(s) de R$ 1.00");
+console.log(M50+" moeda(s) de R$ 0.50");
+console.log(M25+" moeda(s) de R$ 0.25");
+console.log(M10+" moeda(s) de R$ 0.10");
+console.log(M5+" moeda(s) de R$ 0.05");
+console.log(M1C+" moeda(s) de R$ 0.01");
+  
+</script>

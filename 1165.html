@@ -1,0 +1,18 @@
+<script>
+    //var prompt = function(texto) { return lines.shift();};
+    var N = parseInt(prompt("Digite a quantidade de numeros a serem testados:"));
+    for(i=0;i<N;i++){
+        var p = parseInt(prompt("Digite o numero a ser testado:"));
+        var ehprimo = 0;
+        for(j=2;j<p;j++){
+            if(p%j==0){
+                ehprimo++;
+            }
+        }
+        if(ehprimo==0){
+            console.log(p+" eh primo");
+        }else{
+            console.log(p+" nao eh primo");
+        }
+    }
+    </script>

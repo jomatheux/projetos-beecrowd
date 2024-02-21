@@ -1,0 +1,24 @@
+<script>
+    //var prompt = function(texto) { return lines.shift();};
+    var X = parseInt(prompt(""));
+    var Y = parseInt(prompt(""));
+    var res = 0;
+    function Soma(X,Y){
+        
+    if(X<Y){
+        for(i = X+1;i < Y; i++){
+         if(i%2 != 0){
+         res+=i;
+         }
+        }
+    }else{
+        for(i = Y+1;i < X; i++){
+         if(i%2 != 0){
+         res+=i;
+         }
+        }
+    }
+    return res;
+    }
+    console.log(Soma(X,Y));
+</script>
